@@ -18,7 +18,7 @@ object Main {
         logger.info("Iniciando aplicación Spark...")
 
         val resultado = Try {
-          ejecutarTransformaciones(spark)
+          //ejecutarTransformaciones(spark)
           concierto.Concierto.procesar(spark)
         }
 

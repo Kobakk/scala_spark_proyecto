@@ -7,30 +7,19 @@ import org.apache.log4j.Logger
 object Concierto{
   private val logger = Logger.getLogger(getClass.getName)
   def procesar(spark: SparkSession): Unit = {
-    val path = "data/concierto.csv"
-    logger.info(s"Modulo Conciertos: Leyendo archivo desde $path")
+    // 1. Leemos de forma flexible (igual que en Python)
+    val df = spark.read
+      .option("header", "true")     // Usa la primera línea como nombres de columna
+      .option("inferSchema", "true") // Detecta si es número o texto solo
+      .option("quote", "\"")        // IMPORTANTE: Para que Taylor Swift no se rompa con las comas de los precios
+      .option("escape", "\"")
+      .csv("data/concierto.csv")
 
-    // Definimos el esquema para ser explícitos y evitar errores de inferencia
-    val esquemaConcierto = StructType(Array(
-      StructField("id", IntegerType, true),
-      StructField("artista", StringType, true),
-      StructField("ciudad", StringType, true),
-      StructField("precio", DoubleType, true)
-    ))
+    // 2. Mostramos tal cual
+    println("Mostrando datos originales del CSV:")
+    df.show(5, truncate = false) // truncate = false para ver los nombres largos de los tours
 
-    // Lectura del CSV
-    val dfConciertos = spark.read
-      .option("header", "true")
-      .schema(esquemaConcierto)
-      .csv(path)
-
-    logger.info("Datos de conciertos cargados correctamente:")
-    dfConciertos.show()
-
-    // Ejemplo de una pequeña transformación (conciertos caros)
-    val conciertosCaros = dfConciertos.filter("precio > 50")
-
-    logger.info("Conciertos con precio mayor a 50€:")
-    conciertosCaros.show()
+    // 3. Si quieres ver qué columnas ha detectado
+    df.printSchema()
   }
 }
