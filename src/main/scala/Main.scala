@@ -19,6 +19,7 @@ object Main {
 
         val resultado = Try {
           ejecutarTransformaciones(spark)
+          concierto.Concierto.procesar(spark)
         }
 
         resultado match {
