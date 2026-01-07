@@ -1,0 +1,51 @@
+id,prenda,categoria,talla,color,precio_usd,stock
+1,Camiseta básica,Top,M,Blanco,15.99,120
+2,Jeans Slim Fit,Bottom,32,Azul,45.50,85
+3,Chaqueta de Cuero,Outerwear,L,Negro,89.99,30
+4,Sudadera con Capucha,Top,XL,Gris,35.00,60
+5,Falda Plisada,Bottom,S,Rosa,29.95,45
+6,Vestido de Verano,Vestidos,M,Floral,39.99,25
+7,Pantalón Chino,Bottom,34,Beige,42.00,70
+8,Camisa Oxford,Top,L,Azul Claro,28.50,55
+9,Abrigo de Lana,Outerwear,M,Gris Marengo,120.00,15
+10,Shorts Deportivos,Bottom,S,Negro,19.99,100
+11,Blusa de Seda,Top,S,Marfil,49.99,20
+12,Jersey de Punto,Top,L,Burdeos,34.95,40
+13,Cazadora Vaquera,Outerwear,M,Azul,55.00,35
+14,Leggings Negros,Bottom,M,Negro,22.50,150
+15,Pijama de Algodón,Nightwear,XL,Azul Rayas,32.00,50
+16,Gorra de Béisbol,Accesorios,Única,Rojo,12.99,80
+17,Bufanda de Cashmere,Accesorios,Única,Camel,65.00,12
+18,Traje de Baño,Swimwear,M,Turquesa,25.99,65
+19,Cardigan Largo,Outerwear,S,Verde Oliva,45.00,28
+20,Camiseta Gráfica,Top,L,Blanco,18.50,90
+21,Vaqueros Rectos,Bottom,30,Azul Marino,48.00,75
+22,Bermudas de Lino,Bottom,M,Blanco,35.00,40
+23,Gabardina Clásica,Outerwear,M,Beige,95.00,20
+24,Top de Encaje,Top,XS,Negro,24.99,33
+25,Pantalón de Chándal,Bottom,L,Gris,27.50,110
+26,Vestido de Noche,Vestidos,S,Rojo Vino,110.00,10
+27,Camisa de Franela,Top,XL,Cuadros,38.00,45
+28,Guantes de Piel,Accesorios,M,Marrón,29.99,25
+29,Cinturón de Cuero,Accesorios,95,Negro,22.00,60
+30,Calcetines Pack x3,Accesorios,M,Varios,9.99,200
+31,Chaqueta Bomber,Outerwear,L,Azul Marino,65.00,30
+32,Minifalda Denim,Bottom,36,Azul,26.50,42
+33,Sudadera sin Capucha,Top,M,Amarillo,30.00,55
+34,Mono de Lino,Vestidos,S,Verde,59.90,18
+35,Camiseta Tirantes,Top,S,Blanco,10.00,140
+36,Parka de Invierno,Outerwear,XL,Verde Militar,135.00,12
+37,Pantalón Cargo,Bottom,32,Caqui,46.00,58
+38,Kimono Estampado,Outerwear,Única,Multicolor,35.00,22
+39,Jersey Cuello Alto,Top,M,Negro,28.99,65
+40,Shorts Vaqueros,Bottom,38,Azul Lavado,24.00,80
+41,Top Deportivo,Top,S,Fucsia,19.95,70
+42,Chaleco Acolchado,Outerwear,L,Azul,49.00,25
+43,Bolso de Mano,Accesorios,Única,Marrón,75.00,15
+44,Pijama de Seda,Nightwear,M,Azul Noche,85.00,10
+45,Camisa Formal,Top,L,Blanco,32.00,60
+46,Falda Midi,Bottom,M,Mostaza,36.50,38
+47,Chaqueta de Lluvia,Outerwear,M,Amarillo,50.00,20
+48,Gorro de Lana,Accesorios,Única,Gris,14.99,95
+49,Zapatillas de Casa,Accesorios,40,Rosa,18.00,50
+50,Bata de Baño,Nightwear,XL,Blanco,40.00,30

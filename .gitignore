@@ -1,0 +1,21 @@
+# --- Carpetas específicas de tu proyecto ---
+/logs/
+/output/
+/resultado_ventas_csv/
+/resultado_ventas_parquet/
+# --- Scala y sbt ---
+target/
+project/project/
+project/target/
+.cache/
+.sbt/
+
+# --- IntelliJ IDEA ---
+.idea/
+*.iml
+*.iws
+.idea_modules/
+
+# --- Metadatos del sistema ---
+.DS_Store
+thumbs.db
