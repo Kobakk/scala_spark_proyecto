@@ -6,7 +6,9 @@ import scala.util.{Try, Success, Failure}
 
 object Main {
     @transient lazy val logger: Logger = Logger.getLogger(getClass.getName)
+
     def main(args: Array[String]): Unit = {
+    println("----------------- Inicio Proceso Spark -----------------")
         // 1. Configuración de la sesión con gestión de errores
         val spark = SparkSession.builder()
           .appName("SparkProcesamientoSeguro")
@@ -19,7 +21,7 @@ object Main {
 
         val resultado = Try {
           //ejecutarTransformaciones(spark)
-          concierto.Concierto.procesar(spark)
+          //concierto.Concierto.procesar(spark)
         }
 
         resultado match {
@@ -30,8 +32,10 @@ object Main {
             e.printStackTrace()
         }
 
+        println("----------------- Final Proceso Spark -----------------")
         spark.stop()
       }
+
     def ejecutarTransformaciones(spark: SparkSession): Unit = {
         val path = "dataset_windowing.txt"
         logger.info(s"Leyendo archivo desde: $path")
