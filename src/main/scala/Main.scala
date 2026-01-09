@@ -1,3 +1,4 @@
+
 import org.apache.spark.sql.{SparkSession, DataFrame}
 import org.apache.spark.sql.expressions.Window
 import org.apache.spark.sql.functions._
@@ -22,6 +23,7 @@ object Main {
         val resultado = Try {
           //ejecutarTransformaciones(spark)
           //concierto.Concierto.procesar(spark)
+            pokemon.Pokemon.procesar(spark)
         }
 
         resultado match {
