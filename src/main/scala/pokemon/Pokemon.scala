@@ -12,7 +12,7 @@ object Pokemon{
   def procesar(spark: SparkSession): Unit = {
 
     println("----------------- Inicio Proceso Pokemón -----------------")
-
+    val a = 10;
     // 1. SCHEMAS EXPLÍCITOS (Basados en tus archivos)
     val schemaUpdated = StructType(Seq(
       StructField("#", IntegerType, true),
