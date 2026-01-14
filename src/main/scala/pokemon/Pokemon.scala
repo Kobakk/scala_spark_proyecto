@@ -10,7 +10,7 @@ object Pokemon{
   private val logger = Logger.getLogger(getClass.getName)
 
   def procesar(spark: SparkSession): Unit = {
-
+    println("Codigo ejemplo")
     println("----------------- Inicio Proceso Pokemón -----------------")
     val a = 10;
     // 1. SCHEMAS EXPLÍCITOS (Basados en tus archivos)
